@@ -1,0 +1,31 @@
+{{> messages }}
+
+{{#if username }}
+<h2>{{ username }}'s Profile</h2>
+<table class="table">
+    <tr>
+        <td>Name: </td>
+        <td>{{ name }}</td>
+    </tr>
+    <tr>
+        <td>Emails: </td>
+        <td>{{ emails }}</td>
+    </tr>
+    <tr>
+        <td>Home Address: </td>
+        <td>{{ home_addr }}</td>
+    </tr>
+    <tr>
+        <td>Nickname: </td>
+        <td>{{ nick_name }}</td>
+    </tr>
+    <tr>
+        <td>Credit Cards: </td>
+        <td>{{ cards }}</td>
+    </tr>
+    <tr>
+        <td>Shipping Address: </td>
+        <td>{{ shipping_addr }}</td>
+    </tr>
+</table>
+{{/if}}

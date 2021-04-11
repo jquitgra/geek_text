@@ -1,0 +1,12 @@
+<h1>Geek Text Profiles</h1>
+{{#if results}}
+    <h2> Recently logged in Users:</h2>
+    <ul>
+        {{#each results}}
+            <li><a href="/users/{{username}}">{{username}}</a></li>
+        {{/each}}
+    </ul>
+{{/if}}
+
+<p><a href="/auth/login"> Login</a> to Update profile settings</p>
+<p><a href="/auth/register"> Register</a> to register for an account</p>

@@ -1,0 +1,17 @@
+<h2>Login</h2>
+
+{{> messages }}
+
+<form action="/auth/login" method="POST">
+    <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" class="form-control" name="username" id="username">
+    </div>
+    <div class="form-group">
+        <label for="password">Password: </label>
+        <input type="password" class="password" name="password" id="password">
+    </div>
+    <button class="btn btn-primary">Login</button>
+</form>
+
+<p> Or <a href="/auth/Register">Register</a> if you do not have an existing account</p>
